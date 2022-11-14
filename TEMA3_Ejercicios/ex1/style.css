@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif, monospace;
+}
+
+legend {
+  color: royalblue;
+}
+
+body {
+  background-color: paleturquoise;
+  font-weight: bold;
+}
+
+h1 {
+  color: royalblue;
+  text-align: center;
+}
+
+input {
+  background-color: mistyrose;
+}
+
+form {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+fieldset {
+  background-color: lavender;
+}
+
+fieldset > fieldset {
+  background-color: peachpuff;
+  font-weight: normal;
+  font-style: italic;
+}
+
+input[type='checkbox'] legend {
+  color: blue;
+}
+
+input[type='radio']:checked + label {
+  color: green;
+}
+
+#cp:invalid {
+  background-color: orangered;
+}
+
+input[type='text'] {
+  border-bottom: none;
+  border-right: none;
+}
+
+input[type='text']:focus {
+  outline: none;
+  border: 2px rebeccapurple solid;
+}
+
+label {
+  color: green;
+}
+
+h2 {
+  color: darkorchid;
+}
+
+input::placeholder {
+  color: mediumvioletred;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+fieldset > fieldset > label {
+  color: teal;
+}
+
+input[type='radio']:hover {
+  box-shadow: 0px 0px 10px -2px green;
+}
+
+.edad {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+#diw {
+  box-shadow: 3px 3px 3px 0px orange;
+}
+
+#porc {
+  background-color: lemonchiffon;
+}
+
+.boton {
+  font-size: medium;
+  color: royalblue;
+  border-radius: 5px;
+  background-color: lemonchiffon;
+  padding: 10px 10px;
+  border-top: none;
+  border-left: none;
+  border-bottom: 2px solid grey;
+  border-right: 2px solid grey;
+}
+
+.resetb {
+  font-size: medium;
+  color: grey;
+  border-radius: 5px;
+  background-color: lemonchiffon;
+  padding: 10px 10px;
+  border-top: none;
+  border-left: none;
+  border-bottom: 2px solid grey;
+  border-right: 2px solid grey;
+}
+
+.boton:hover {
+  border: 0;
+}
+
+.botonRein:hover {
+  border: 0;
+}
+
+.botones {
+  text-align: center;
+}
+
+.color {
+  color: rebeccapurple;
+}

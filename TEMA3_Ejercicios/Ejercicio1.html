@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_ej1.css" />
+    <title>Ejercicio 1</title>
+  </head>
+
+  <body>
+    <h2 class="textoAzul">Introduzca datos</h2>
+    <fieldset>
+      <legend class="textoAzul">Datos personales</legend>
+      <p>
+        <label for="nombre" class="textoVerde">Nombre</label>
+        <input type="text" name="nombre" size="100" maxlength="25" placeholder="Obligatorio" required spellcheck="false" class="nom_apell"/>
+      </p>
+      <p>
+        <label for="nombre" class="textoVerde">Apellidos</label>
+        <input
+          type="text"
+          name="apellidos"
+          size="250"
+          maxlength="50"
+          placeholder="Obligatorio" class="nom_apell"
+        />
+      </p>
+
+      <fieldset>
+        <legend class="textoAzul">Edad:</legend>
+
+        <input type="radio" id="opc_A" name="edad" value="18-25" />
+        <label for="opc_A" class="radio">18 a 25</label>
+
+        <input type="radio" id="opc_B" name="edad" value="26-35" />
+        <label for="opc_B" class="radio">26 a 35</label>
+
+        <input type="radio" id="opc_C" name="edad" value="36-45" />
+        <label for="opc_C" class="radio">36 a 45</label>
+
+        <input type="radio" id="opc_D" name="edad" value="46-55" />
+        <label for="opc_D" class="radio">46 a 55</label>
+
+        <input type="radio" id="opc_E" name="edad" value="+55" />
+        <label for="opc_E" class="radio">Mayor de 55</label>
+
+        <input type="radio" id="opc_F" name="edad" value="ns_nc" checked/>
+        <label for="opc_F" class="radio">NS/NC</label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend class="textoAzul">Intereses:</legend>
+        <p>
+            <label for="o1" class="intereses">Arte y literatura</label>
+            <input type="checkbox" id="o1" name="opcion_a" value="arte"><br>
+
+            <label for="o2" class="intereses">Ciencia y tecnología</label>
+            <input type="checkbox" id="o2" name="opcion_b" value="ciencia"><br>
+        
+            <label for="o3" class="intereses">Política y sociedad</label>
+            <input type="checkbox" id="o3" name="opcion_c" value="politica"><br>  
+        
+            <label for="o4" class="intereses">Ocio y deporte</label>
+            <input type="checkbox" id="o4" name="opcion_d" value="deportes"><br>  
+        
+            <label for="o4" class="intereses">Cine y televisión</label>
+            <input type="checkbox" id="o4" name="opcion_d" value="cineTv"><br>
+        </p>
+      </fieldset>
+      <p>
+        <label for="codPostal" class="textoVerde" pattern="([0-4][0-9]|5[0-2])[0-9]{3}" size="5">Código postal:</label>
+        <input type="number" name="codPostal" />
+      </p>
+    </fieldset>
+
+
+    <!-- ******************SEGUNDO BLOQUE DE FORMULARIO************************ -->
+    <fieldset>
+        <legend class="textoAzul">Otros datos</legend>
+
+        <h3 class="textoMorado">Color favorito</h3>
+
+        <input type="radio" id="color_A" name="color" value="3" checked/>
+        <label for="color_A" class="rad_color">Rojo</label>
+
+        <input type="radio" id="color_B" name="color" value="3" />
+        <label for="color_B" class="rad_color">Azul</label>
+
+        <input type="radio" id="color_C" name="color" value="3" />
+        <label for="color_C" class="rad_color">Amarillo</label>
+
+        <input type="radio" id="color_D" name="color" value="3" />
+        <label for="color_D" class="rad_color">Verde</label>
+  
+
+        <h3 class="textoMorado">Asignaturas favoritas</h3>
+
+          <p><label for="dwec" class="textoVerde">DWEC</label>
+             <input type="checkbox" name="dwec" value="DWEC"><br>
+              
+             <label for="dwes" class="textoVerde">DWES</label>
+             <input type="checkbox" name="dwes" value="DWES"><br>
+              
+             <label for="diw" class="textoVerde">DIW</label>
+             <input type="checkbox" name="diw" value="DIW" checked><br>
+              
+             <label for="daw" class="textoVerde">DAW</label>
+             <input type="checkbox" name="daw" value="DAW"><br>
+         
+             <label for="eiem" class="textoVerde">EIEM</label>
+             <input type="checkbox" name="eiem" value="EIEM"><br>
+          </p>
+       
+        <p>
+            <h3 class="textoMorado">Probabilidad de aprobar</h3>
+            <label for="prob_aprobar" class="textoVerde">Porcentaje</label>
+        <input type="number" value="50" step="5" min="0" max="100" name="prob_aprobar" />
+        </p>
+      </fieldset>
+
+      <!-- ************Botones de enviar******************* -->
+      <p class="botones">
+        <input type="button" value="Enviar formulario">
+        <input type="button" value="Reiniciar formulario" class="desactivado">
+    </p>
+  </body>
+</html>

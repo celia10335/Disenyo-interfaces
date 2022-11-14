@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- charset  unicode, todos los idiomas, emojis... -->
+    <meta name="description" content="This is my first webpage ... " />
+    <!-- en name pones el nombre del metadato. y en content el metadato: En desctiption es una descripción en lenguaje natural  -->
+    <meta name="keywords" content="coding, html, programming" />
+    <!-- keywords ayuda a posicionarnos frente a los motores de búsqueda -->
+    <meta name="author" content="Manuel Gómez Lora" />
+    <!-- Autor de la página web -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Para dar soporte a las versiones antiguas de IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- El conjunto de cosas que se muestra en pantalla, es decir si no se pone, las páginas responsives no se muestran, es la referencia de estas-->
+    <meta name="generator" content="Programa" />
+    <!-- Si nuestra página web ha sido creada de forma automáticamente con un programa -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Señalar contenido que tiene relación con el html de la web, tienes que poner en rel la palabra cable -->
+    <title>Formulario de prueba Selectores</title>
+  </head>
+  <body>
+    <h1>Introduzca datos</h1>
+    <section>
+
+    <form name="formulario" action="#" method="get">
+        <fieldset>
+            <legend>Datos personales</legend>
+                
+            <p>
+                <label for="input1">Nombre</label>
+                <input type="text" name="input1" id="input1" size="20" maxlength="25" autofocus="autofocus" placeholder="obligatorio" required>
+
+            </p>
+            <p>
+                <label for="input2"> Last Name</label>
+                <input type="text" name="input2" placeholder="obligatorio" id="input2" size="50" maxlength="50" required>
+            </p>
+           <fieldset class="dentro">
+            <legend>Edad:</legend>
+
+            <input type="radio" name="edad" id="e18" value="18" />
+            <label for="edad" class="edad">18 a 25</label>
+
+            <input type="radio" name="edad" id="e26" value="26" />
+            <label for="edad" class="edad">26 a 35</label>
+
+            <input type="radio" name="edad" id="e36" value="36" />
+            <label for="edad" class="edad">36 a 45</label>
+
+            <input type="radio" name="edad" id="e46" value="46" />
+            <label for="edad" class="edad">46 a 55</label>
+
+            <input type="radio" name="edad" id="e56" value="56" />
+            <label for="edad" class="edad">Mayor de 55</label>
+
+            <input type="radio" name="edad" id="ns" value="ns/nc" checked />
+            <label for="edad" class="edad">NS/NC</label>
+          </fieldset>
+          </br>
+<fieldset>
+  <legend>Intereses</legend>
+  <label for="o1">Arte y literatura</label>
+  <input type="checkbox" name="o1" value="a" ><br />
+  <label for="o2">Ciencia y Tecnología</label>
+  <input type="checkbox" name="o2" value="b"><br />
+  <label for="o3">Política y Sociedad</label>
+  <input type="checkbox" name="o3" value="c"><br />
+  <label for="o4">Ocio y Deporte</label>
+  <input type="checkbox" name="o4" value="d"><br />
+  <label for="o5">Cine y Televisión</label>
+  <input type="checkbox" name="o4" value="e"><br />
+</fieldset>
+
+<p>
+  <label for="cp">Código Postal</label>
+  <input type="text" name="cp" id="cp" pattern="\d{5}" size="5" />
+</p>
+</fieldset>
+<fieldset>
+  <legend>Otros datos</legend>
+  <h2>Color Favorito</h2>
+
+          <input type="radio" name="color" id="color" value="rojo" />
+          <label for="rojo" class="color">Rojo</label>
+
+          <input type="radio" name="color" id="color" value="azul" />
+          <label for="rojo" class="color">Azul</label>
+
+          <input type="radio" name="color" id="color" value="amarillo" />
+          <label for="rojo" class="color">Amarillo</label>
+
+          <input type="radio" name="color" id="color" value="verde" />
+          <label for="rojo" class="color">Verde</label>
+
+
+  <h2>Asignaturas favoritas</h2>
+  <p>
+    <label for="o1">DWEC</label>
+    <input type="checkbox" name="dwec" id="dwec" value="a" >
+  </p>
+  <p>
+    <label for="o2">DWES</label>
+    <input type="checkbox" name="dwes"  id="dwes"  value="b">
+  </p>
+  <p>
+    <label for="o3">DIW</label>
+    <input type="checkbox" name="diw" id="diw"  value="c" checked>
+  </p><p>
+    <label for="o4">DAW</label>
+    <input type="checkbox" name="daw" id="daw" value="d">
+  </p><p>
+    <label for="o5">EIEM</label>
+    <input type="checkbox" name="eiem" id="eiem"  value="eiem">
+  </p>
+  <h2>Probabilidad de aprobar</h2>
+  <label for="">Porcentaje</label>
+  <input
+              type="number"
+              min="0"
+              max="100"
+              step="5"
+              name="porc"
+              id="porc"
+              value="50"
+            />
+</fieldset>
+            
+<p class="botones">
+  <input
+    type="submit"
+    name="envio"
+    class="boton"
+    value="Enviar Formulario"
+  />
+
+  <input
+    type="reset"
+    name="reset"
+    class="resetb"
+    value="Reiniciar Formulario"
+  />
+</p>
+    </form> 
+
+</section>
+
+  </body>
+</html>
