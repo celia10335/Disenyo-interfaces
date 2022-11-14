@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="iconos/constelacion_2.png"
+      sizes="36x36"
+    />
+    <link rel="stylesheet" href="amazingStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="./Home.html">Amazing Stargazing</a></h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="./Next_events.html" target="_self">Next Events</a></li>
+          <li><a href="./Astronews.html" target="_self">Astro News</a></li>
+          <li><a href="./Constellations.html" target="_self">Constellations Guide</a>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contact">
+      <h1>Let us know about you</h1>
+
+      <form action="./infoStargazing.php" method="post">
+        <fieldset>
+          <legend>Personal details</legend>
+          <p>
+            <label for="first_name">First name</label>
+            <input
+              type="text" name="first_name" size="50" maxlength="50" placeholder="Your first name" required spellcheck="false" class="f_name" autofocus/>
+          </p>
+          <p>
+            <label for="last_name">Last name</label>
+            <input type="text" name="last_name" size="75" maxlength="75" placeholder="Your last name" class="l_name"/>
+          </p>
+          <p>
+            <label for="bdate">Birth date</label>
+            <input type="date" name="bdate"/>
+          </p>
+          <p>
+            <label for="region">Region</label>
+            <select name="region" id="region">
+              <option value="" selected disabled hidden>---</option>
+              <option value="New South Wales">New South Wales</option>
+              <option value="Northern Territory">Northern Territory</option>
+              <option value="New South Wales">New South Wales</option>
+              <option value="Queensland">Queensland</option>
+              <option value="South Australia">South Australia</option>
+              <option value="Victoria">Victoria</option>
+              <option value="Western Australia">Western Australia</option>
+            </select>
+          </p>
+          <p>
+            <label for="address">Address</label>
+            <input type="text" name="address" size="100" maxlength="100" placeholder="Your address"/>
+          </p>
+          <p>
+            <label for="picture">Load your photo</label>
+            <input type="file" name="picture" />
+          </p>
+
+          <fieldset>
+            <legend>Contact information</legend>
+            <p>
+              <label for="phone">Phone number</label>
+              <input type="text" id="phone" name="phone" pattern="\d{9}"/>
+
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" required size="50" placeholder="youremail@email.com"/>
+            </p>
+
+          </fieldset>
+          
+        </fieldset>
+
+        <fieldset class="hobbies">
+          <legend>Interests and hobbies</legend>
+          <div>
+            <p>
+              <label for="astronomy">Astronomy</label>
+              <input type="checkbox" name="hobbies" value="Astronomy" checked>
+  
+              <label for="constellations">Constellations</label>
+              <input type="checkbox" name="hobbies" value="Constellations">
+  
+              <label for="music">Music</label>
+              <input type="checkbox" name="hobbies" value="Music">
+           
+              <label for="photography">Photography</label>
+              <input type="checkbox" name="hobbies" value="Photography">
+  
+              <label for="hiking">Hiking</label>
+              <input type="checkbox" name="hobbies" value="Hiking">
+              
+              <label for="books">Books</label>
+              <input type="checkbox" name="hobbies" value="Books">
+            </p>
+          </div>
+        </fieldset>
+
+        <p>Which often would you like to receive our newsletter?
+          
+        <input type="radio" id="daily" name="frecuence" value="daily" checked/>
+        <label for="daily">Daily</label>
+
+        <input type="radio" id="weekly" name="frecuence" value="weekly" />
+        <label for="weekly">Weekly</label>
+
+        <input type="radio" id="monthly" name="frecuence" value="monthly" />
+        <label for="monthly">Monthly</label>
+
+        <input type="radio" id="never" name="frecuence" value="never" />
+        <label for="never">I don't want to be suscribed</label>
+        </p>
+
+        <hr>
+
+        <p>Desirable budget --->
+          <label for="budget_min" class="budget_min">Minimum</label>
+          <input type="number" value="0" step="50" min="0" max="1000" name="budget_min" /> $
+
+          <label for="budget_max" class="budget_max">Maximum</label>
+          <input type="number" value="50" step="50" min="50" max="10000" name="budget_max" /> $
+        </p>
+
+        <p>Do you want to tell us something else? Feel free</p>
+
+        <textarea name="message" rows="7" cols="80" placeholder="I would like to say that..."></textarea>
+
+        <p class="button">
+          <input type="submit" value="Submit form">
+      </p>
+      </form>
+    </main>
+  </body>
+</html>

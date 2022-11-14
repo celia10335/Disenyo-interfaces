@@ -1,0 +1,98 @@
+/* ------------- Fuente predominante -------------- */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+
+/* ------------ Input type text --------------- */
+input[type="text"] {
+    border: 1px solid grey;
+}
+
+input[type="text"].f_name, input[type="text"].password{
+    width: 150px;
+}
+
+input[type="text"].l_name{
+    width: 216px;
+}
+
+input[type="text"].city, input[type="text"].cardnumber{
+    width: 181px;
+}
+
+input[type="text"].postcode{
+    width: 82px;
+}
+
+input[type="text"].regionalcode, input[type="text"].susc-code{
+    width: 110px;
+}
+
+input[type="text"].username{
+    width: 124px;
+}
+
+input[type="text"].discount{
+    width: 98px;
+}
+
+input[type='text']:focus {
+    outline-color: red;
+    box-shadow: 0px 0px 3px 1px red;
+  }
+
+
+
+
+
+/* ------------ Input type radio --------------- */
+input[type='radio']:hover {
+    box-shadow: 0px 0px 10px -2px black;
+  }
+
+  
+
+
+  
+/* ------------ Input type checkbox --------------- */
+input[type="checkbox"]:checked {
+    box-shadow: 2px 5px 3px black;
+    color: white;
+}
+
+input[type="checkbox"]:hover{
+    box-shadow: 0px 0px 10px -2px black;
+}
+
+
+
+
+
+/* ------------ Input type number --------------- */
+#cp:invalid {
+    background-color: orangered;
+}
+
+input[type="number"] {
+    width: 100px;
+    border: 2px inset white;
+}
+
+
+
+
+/* Textarea ------------------------- */
+textarea{
+    width: 314px;
+    height: 75px;
+}
+
+
+
+
+/* ------------ Input type button --------------- */
+.button{
+    text-align: left;
+}
